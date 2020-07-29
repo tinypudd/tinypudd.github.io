@@ -83,14 +83,14 @@
 
 
 
-<meta name="description" content="二.数据库的安装和链接1.安装 MySQL 1.验证是否安装MySQL 12[root@shark ~]# mysql-bash: mysql: 未找到命令    返回以上信息表示没有安装  安装 MySQL  1234567891011121314151617181920安装 wget 软件[root@shark ~]# yum install wget下载仓库文件[root@shark ~]#">
+<meta name="description" content="二.数据库的安装和链接1.安装 MySQL 1.验证是否安装MySQL 12[root@shark ~]# mysql-bash: mysql: 未找到命令    返回以上信息表示没有安装 2.安装 MySQL 1234567891011121314151617181920安装 wget 软件[root@shark ~]# yum install wget下载仓库文件[root@shark ~]#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二、数据库的安装与链接">
 <meta property="og:url" content="https://github.com/tinypudd/tinypudd.github.io.git/2020/07/29/%E4%BA%8C%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%93%BE%E6%8E%A5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="二.数据库的安装和链接1.安装 MySQL 1.验证是否安装MySQL 12[root@shark ~]# mysql-bash: mysql: 未找到命令    返回以上信息表示没有安装  安装 MySQL  1234567891011121314151617181920安装 wget 软件[root@shark ~]# yum install wget下载仓库文件[root@shark ~]#">
+<meta property="og:description" content="二.数据库的安装和链接1.安装 MySQL 1.验证是否安装MySQL 12[root@shark ~]# mysql-bash: mysql: 未找到命令    返回以上信息表示没有安装 2.安装 MySQL 1234567891011121314151617181920安装 wget 软件[root@shark ~]# yum install wget下载仓库文件[root@shark ~]#">
 <meta property="article:published_time" content="2020-07-29T01:40:45.000Z">
-<meta property="article:modified_time" content="2020-07-29T01:41:36.985Z">
+<meta property="article:modified_time" content="2020-07-29T01:44:12.353Z">
 <meta property="article:author" content="TinyPud">
 <meta name="twitter:card" content="summary">
 
@@ -405,7 +405,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  876
+                  877
                 </span>
               
 
@@ -447,9 +447,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@shark ~]<span class="comment"># mysql</span></span><br><span class="line">-bash: mysql: 未找到命令  </span><br></pre></td></tr></table></figure>
 
 <p>返回以上信息表示没有安装</p>
-<ol start="2">
-<li>安装 MySQL</li>
-</ol>
+<p>2.安装 MySQL</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">安装 wget 软件</span><br><span class="line">[root@shark ~]<span class="comment"># yum install wget</span></span><br><span class="line"></span><br><span class="line">下载仓库文件</span><br><span class="line">[root@shark ~]<span class="comment"># wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm</span></span><br><span class="line"></span><br><span class="line">安装仓库文件</span><br><span class="line">[root@shark ~]<span class="comment"># yum localinstall mysql80-community-release-el7-1.noarch.rpm</span></span><br><span class="line"></span><br><span class="line">安装 YUM 管理工具包，此包提供了 yum-config-manager 命令工具</span><br><span class="line">[root@shark ~]<span class="comment"># yum install yum-utils</span></span><br><span class="line"></span><br><span class="line">禁用 <span class="number">8.0</span> 仓库</span><br><span class="line">[root@shark ~]<span class="comment"># yum-config-manager --enable mysql57-community</span></span><br><span class="line"></span><br><span class="line">启用 <span class="number">5.7</span> 仓库</span><br><span class="line">[root@shark ~]<span class="comment"># yum-config-manager --enable mysql57-community</span></span><br><span class="line"></span><br><span class="line">安装 MySQL</span><br><span class="line">[root@shark ~]<span class="comment"># yum install -y  mysql-community-server</span></span><br></pre></td></tr></table></figure>
 
 </blockquote>
